@@ -1,9 +1,15 @@
 import './App.css';
+import Footer, Nav, Header, Main from './Components/Footer.js'
+import  
 
 function App() {
   return (
-    <div className="App"> HomePage
-    </div>
+    <body>
+      <Header class="header"/>
+      <Nav class="nav"/>
+      <Main class="main"/>
+      <Footer class='footer/>
+    </body>
   );
 }
 
