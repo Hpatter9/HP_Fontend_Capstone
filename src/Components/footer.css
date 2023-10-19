@@ -1,0 +1,28 @@
+.footer-container {
+    display: inline-flex; /* Use flexbox layout */
+    justify-content: space-between; /* Spread elements horizontally */
+    align-items: auto; /* Center elements vertically */
+    padding: 1em; /* Adjust padding as needed */
+  }
+  
+  .logo {
+    height: auto;
+    width: 30%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.siteNav{
+    text-decoration: underline;
+    grid-area: nav;
+
+}
+.contactUs{
+    text-decoration: underline;
+    grid-area: contact;
+
+}
+.socialMedia{
+    text-decoration: underline;
+    grid-area: social;
+
+}
