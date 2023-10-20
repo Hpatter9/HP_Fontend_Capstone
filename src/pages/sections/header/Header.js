@@ -1,5 +1,5 @@
 import React from 'react';
-import littleLemonLogo from '../assets/Little Lemon logo.png';
+import littleLemonLogo from '../../../assets/Little Lemon logo.png';
 import './header.css';
 
 const Header = () => {

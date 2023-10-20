@@ -1,25 +1,31 @@
 import React from'react';
-import Footer from './Components/Footer';
-import Header from './Components/Header';
-import Hero from './Components/Hero';
-import Highlights from './Components/Highlights';
-import Card from './Components/Card';
-import './Components/header.css'; // Import the CSS file for the Header component
-import './Components/footer.css';
-import './Components/hero.css';
-import './Components/highlights.css'
+import Homepage from './pages/homepage/homepage';
+import About from './pages/about/about';
+import Login from './pages/login/login';
+import Menu from './pages/menu/menu';
+import Order from './pages/order/order';
+import Reservations from './pages/reservations/reservations';
+import Layout from "./pages/sections/layout/layout";
+import pages from "./pages/pages";
 import './App.css'
+import { Route, Routes } from "react-router-dom";
 
-const App = ()=> {
+const App =()=> {
   return (
-    <body classname = 'app-body'>
-      <Header className='header' />
-      <Hero className='hero'/>
-      <Highlights className='highlights' />
-      <Card className='card' />
-      <Footer className='footer'/>
-    </body>
-  );
+    <div>
+      <Layout>
+        <Routes>
+          <Route path={pages.get("homepage").path} element={<Homepage />} />
+          <Route path={pages.get("about").path} element= {<About />} />
+          <Route path={pages.get("login").path} element= {<Login />} />
+          <Route path={pages.get("menu").path} element= {<Menu />} />
+          <Route path={pages.get('order').path} element= {<Order />} />
+          <Route path={pages.get('reservations').path} element= {<Reservations />} />
+          <Route path="*" element={<Homepage />} />
+        </Routes>
+      </Layout>
+    </div>
+  )
 }
 
 export default App;
