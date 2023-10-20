@@ -3,12 +3,12 @@ import './highlights.css';
 
 const Hightlights = ()=> {
     return (
-        <specials className ='specialsblock'>
+        <div className ='specials-container'>
             <div className ="specials">
-                <h3>Specials</h3>
-                <button id="button">Online Menu</button>
+                <h3 className='specials-text'>Specials</h3>
+                <button id="button-online-menu">Online Menu</button>
             </div>
-        </specials>
+        </div>
     )
 }
 

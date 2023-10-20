@@ -1,0 +1,87 @@
+.t-background {
+    background: #495e57;
+    padding: 0rem;
+}
+.t-main {
+    height: 100%;
+    padding: 2rem 0;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+.t-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 85fr 15fr;
+    margin-bottom: 2rem;
+}
+.t-title {
+    color: #f4ce14;
+    font-size: 38px;
+    line-height: 15px;
+    text-align: center;
+    padding: 3rem;
+}
+.t-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* @media screen and (max-width: 767px) {
+    .t-layout {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+} */
+.t-card {
+    background: white; 
+    align-items:center ;
+    border-radius: 16px;
+    height: 14rem;
+    min-height: 10rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+.t-review {
+    color: #4a4a4a;
+    font-size: 14px;
+    text-align: center;
+    max-width: fit-content;
+}
+.t-name {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: -2rem;
+}
+.t-rating {
+    border-radius: 5px;
+    width: 8rem;
+    object-fit: cover;
+    padding-bottom: .5rem;
+}
+.t-profilepic {
+    border-radius: 50%;
+    width: 6rem;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+}
+/* @media screen and (max-width: 767px) {
+    .t-card {
+      background: white;
+      border-radius: 16px;
+      height: 100%;
+      min-height: 10rem;
+      width: 18rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+  } */

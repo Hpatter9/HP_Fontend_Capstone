@@ -4,6 +4,7 @@
     justify-content: space-between; /* Spread elements horizontally */
     align-items: auto; /* Center elements vertically */
     padding: 1em; /* Adjust padding as needed */
+    box-shadow: 0 0 10px black, 0 0 20px rgb(36, 35, 35);
   }
   
   .logo {

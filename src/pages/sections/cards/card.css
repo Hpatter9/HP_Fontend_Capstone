@@ -10,7 +10,7 @@
 }
 .card {
     width: 18rem;
-    height: 35rem;
+    height: 32rem;
     border-radius: 30px 30px 0px 0px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
     position: relative;
@@ -31,11 +31,25 @@
     line-height: 1.8em;
     margin-right: 1em;
     padding: 1em;
+    justify-content: center;
   }
   .foodprice{
-    color: black;
+    color: #ee9972;
+    position: absolute;
+    right: 0;
+  }
+  .foodprice, .cardtitle{
+    display: inline;
   }
   .cardtitle{
     color: black;
     font-weight: bold;
+  }
+  .description {
+    justify-content: auto;
+  }
+  .od {
+    position: absolute;
+    bottom: 0;
+    font-weight:bolder;
   }

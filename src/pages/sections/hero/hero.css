@@ -12,25 +12,25 @@
     width: 40%;
 }
 
-img {
+.hero-image {
     height: auto;
     width: 10%;
     overflow-clip-margin: content-box;
     overflow: clip;
 }
 
-h1 {
+.title {
     color: #f4ce14;
     font-size: 60px;
     font-weight: 700;
 }
 
-h2 {
+.location {
     color: #fff;
     font-size: 30px;
     margin-top: -1.5em;
 }
-p {
+.description {
     color: #fff;
     font-family: Karla,sans-serif;
     font-size: 22px;

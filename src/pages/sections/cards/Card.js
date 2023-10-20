@@ -20,8 +20,8 @@ const Card = () => {
           <div className='cardbody'>
             <p className = 'cardtitle'>{card.title}</p>
             <p className='foodprice'>{card.price}</p>
-            <h5>{card.description}</h5>
-            <h4>Order Delivery</h4>
+            <h5 classNme='description'>{card.description}</h5>
+            <h4 className='od'>Order Delivery</h4>
           </div>
         </div>
       ))}

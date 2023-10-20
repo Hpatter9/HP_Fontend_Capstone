@@ -1,0 +1,46 @@
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7em;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.about-text{
+    width: 50%;
+}
+.about-title{
+    font-size: 38px;
+    font-weight: bold;
+}
+.about-location{
+    font-size: 24px;
+    font-weight: normal;
+}
+.about-description{
+    font-size: 16px;
+    line-height: 24px;
+}
+.about-images{
+    width: 50%;
+    position: relative;
+}
+.about-image-2{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: -3rem;
+    right: 35%;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.about-image-1 {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    bottom: -1rem;
+    left: 35%;
+    z-index: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
