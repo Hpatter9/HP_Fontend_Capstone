@@ -8,7 +8,7 @@ const Footer = ()=> {
             <img src={littleLemonLogo} alt = 'Little lemon logo' className='footer-logo'></img>
             <ul className= 'sitenav-list'>
                 <li className = 'sitenav-title'>Site navigation</li>
-                <li className = 'site-item'><a href="#home">Home</a></li>
+                <li className = 'site-list1'><a href="#home">Home</a></li>
                 <li className = 'site-item'><a href="#menu">Menu</a></li>
                 <li className = 'site-item'><a href="#about">About</a></li>
                 <li className = 'site-item'><a href="#reservations">Reservations</a></li>

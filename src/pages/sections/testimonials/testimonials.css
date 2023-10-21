@@ -1,12 +1,10 @@
 .t-background {
     background: #495e57;
-    padding: 0rem;
 }
 .t-main {
     height: 100%;
-    padding: 2rem 0;
     max-width: 65rem;
-    margin: 0 auto;
+    margin: auto;
 }
 .t-container {
     display: flex;
@@ -14,13 +12,14 @@
     justify-content: center;
     grid-template-columns: 85fr 15fr;
     margin-bottom: 2rem;
+    max-width: 65rem;
 }
 .t-title {
     color: #f4ce14;
     font-size: 38px;
     line-height: 15px;
     text-align: center;
-    padding: 3rem;
+    padding-top: 2rem;
 }
 .t-layout {
     display: flex;

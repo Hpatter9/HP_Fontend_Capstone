@@ -1,21 +1,26 @@
+.hero-background{
+  background: #495e57;
+  display: flex;
+  height: 100%;
+
+}
 .hero-container {
-    background-color: #495e57;
     display: flex;
-    height: 30rem;
-    margin-top: 2em;
-    width: 100%;
+    height: 26rem;
+    margin:auto;
+    width: 65rem;
+    justify-content: center;
+    align-content: center;
 }
 
 .hero-content {
-    margin-left: 7em;
-    margin-right: 5em;
-    width: 40%;
+    margin-right: 4em;
+    width: 70%;
 }
 
 .hero-image {
     height: auto;
-    width: 10%;
-    overflow-clip-margin: content-box;
+    width: 20%;
     overflow: clip;
 }
 
@@ -28,13 +33,24 @@
 .hero-location {
     color: #fff;
     font-size: 30px;
-    margin-top: -1.5em;
 }
 .hero-description {
     color: #fff;
     font-family: Karla,sans-serif;
-    font-size: 22px;
-    width: 350px;
+    font-size: 18px;
+    width: 100%;
+}
+.hero-featured {
+    width: 30%;
+
+}
+.hero-featured img {
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,.2);
+    height: 400px;
+    margin-left: 0;
+    margin-top: 3em;
+    width: 95%;
 }
 .reserve-button {
     background-color: #f4ce14;
@@ -49,40 +65,35 @@
     margin: 1em;
     width: 12em;
 }
-
-.hero-featured {
-    width: 50%;
-}
-
-.hero-featured img {
-    border-radius: 15px;
-    box-shadow: 3px 3px 15px rgba(0,0,0,.2);
-    height: 500px;
-    margin-left: 6em;
-    margin-top: 2em;
-    width: 60%;
-}
 @media (max-width: 800px) {
+  .hero-background{
+    background: #495e57;
+    display: flex;
+    height: 39rem;
+  }
+ 
   .hero-content {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 2em;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-  }
+    height: 100%;
+    margin: 0 auto 0;
+    max-width: 65rem;
+}
   .hero-description {
     text-align: center;
-    width: 95%;
-  }
-  .hero-location {
-    font-size: 24px;
+    width: 100%;
   }
   .hero-title {
-    font-size: 45px;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom:0;
   }
+  .hero-location {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
   .hero-featured {
       display: none;
   }

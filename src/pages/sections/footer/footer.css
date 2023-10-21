@@ -59,6 +59,8 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
+      box-shadow: none
+
     }
   
     .footer-logo,
@@ -70,8 +72,6 @@
     .social-list,
     .footer-copy {
       width: 100%;
-
-
     }
 
     .sitenav-title,
