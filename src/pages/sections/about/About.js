@@ -15,7 +15,7 @@ const About = ()=> {
                 <img className='about-image-1' src={about1} alt='genera restaraunt pic' height={200} width={200}/>
                 <img className='about-image-2' src={about2} alt='owners' height={200} width={200}  />
             </div>
-        </div>
+       </div>
     )
 }
 
