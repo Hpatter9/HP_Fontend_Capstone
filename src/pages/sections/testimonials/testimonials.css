@@ -26,15 +26,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
-/* @media screen and (max-width: 767px) {
-    .t-layout {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-} */
+
 .t-card {
     background: white; 
     align-items:center ;
@@ -46,6 +40,7 @@
     flex-direction: column;
     padding: 1rem;
     padding-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .t-review {
     color: #4a4a4a;
@@ -71,17 +66,12 @@
     object-fit: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
 }
-/* @media screen and (max-width: 767px) {
-    .t-card {
-      background: white;
-      border-radius: 16px;
-      height: 100%;
-      min-height: 10rem;
-      width: 18rem;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-      margin-bottom: 1rem;
+
+    @media screen and (max-width: 767px) {
+        .t-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        }
     }
-  } */

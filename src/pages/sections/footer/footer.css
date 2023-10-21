@@ -1,30 +1,92 @@
 .footer-container {
     width: 100%;
-    display: inline-flex; /* Use flexbox layout */
-    justify-content: space-between; /* Spread elements horizontally */
-    align-items: auto; /* Center elements vertically */
-    padding: 1em; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     box-shadow: 0 0 10px black, 0 0 20px rgb(36, 35, 35);
   }
-  
-  .logo {
+.footer-logo {
+    display: flex;
     height: auto;
-    width: 30%;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+    max-width: 30%;
 }
-.siteNav{
-    text-decoration: underline;
-    grid-area: nav;
+.sitenav-list{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sitenav-title{
+    font-size: 24px;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+.contactus-list{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-title{
+    font-size: 24px;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+.social-list{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-title{
+    font-size: 24px;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+.footer-copy {
+    display: flex;
+    width: 10%;
+}
+.footer-container a:-webkit-any-link {
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width: 1050px) {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .footer-logo,
+    .sitenav-list,
+    .sitenav-title,
+    .contactus-list,
+    .contact-title,
+    .social-title,
+    .social-list,
+    .footer-copy {
+      width: 100%;
 
-}
-.contactUs{
-    text-decoration: underline;
-    grid-area: contact;
 
-}
-.socialMedia{
-    text-decoration: underline;
-    grid-area: social;
+    }
 
-}
+    .sitenav-title,
+    .contact-title,
+    .social-title{
+        justify-content: center;
+        font-size: 18px;
+        padding-top: 1rem;
+        padding-bottom: .25rem;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+  }
+  @media (min-width: 880px) {
+    .footer-container {
+      justify-content: space-around;
+    }
+  }

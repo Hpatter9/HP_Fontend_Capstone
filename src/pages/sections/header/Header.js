@@ -5,11 +5,9 @@ import './header.css';
 const Header = () => {
   return (
     <header className='header-container'>
-      <logo className='logo'>
-        <img src={littleLemonLogo} alt='Little Lemon Logo'/>
-      </logo>
+      <img src={littleLemonLogo} alt='Little Lemon Logo' className='header-logo' />
       <nav className='nav'>
-        <ul>
+        <ul className='nav-list'>
           <li className='list-item1'><a href="#home">Home</a></li>
           <li className='list-item2'><a href="#about">About</a></li>
           <li className='list-item3'><a href="#menu">Menu</a></li>

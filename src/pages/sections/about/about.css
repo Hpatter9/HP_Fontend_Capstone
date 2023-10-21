@@ -44,3 +44,16 @@
     z-index: 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 800px) {
+    .about-container{
+        margin: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .about-text{
+        width: 100%;
+    }
+    .about-images{
+        display: none;
+    }
+}

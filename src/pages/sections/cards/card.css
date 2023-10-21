@@ -1,12 +1,10 @@
 .card-container {
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 2rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3em;
+  margin-top: 1em;
+  width: 100%;
 }
 .card {
     width: 18rem;
