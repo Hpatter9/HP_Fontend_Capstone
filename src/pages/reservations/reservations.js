@@ -1,9 +1,12 @@
 import React from "react";
-import UnderConstruction from "../sections/underconstruction/underconstruction";
+import './reservations.css'
+import ReservationForm from "./reservationform.js";
 
 const Reservations = () => {
   return (
-    <UnderConstruction />
+    <>
+      <ReservationForm/>
+    </>
   );
 };
 export default Reservations;
