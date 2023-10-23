@@ -81,6 +81,9 @@ ul li {
         text-decoration: underline;
         font-weight: bold;
     }
+    .footer-copy{
+      display: block;
+    }
   }
   @media (min-width: 880px) {
     .footer-container {

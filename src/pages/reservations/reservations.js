@@ -19,6 +19,11 @@ const Reservations = () => {
       (value) => value
     );
 
+    if (!formValues.name || !formValues.date || !formValues.time || !formValues.people) {
+      alert("Please fill out all of the required fields.");
+      return;
+    }
+
     if (areAllFieldsFilled) {
       setIsPopupVisible(true);
     }
@@ -44,13 +49,14 @@ const Reservations = () => {
       <div className='r'>
         <div className='r-card'>
           <h1 className = 'r-title'>Reserve a Table</h1>
-          <ReservationForm 
+          <ReservationForm
             availableTimes={availableTimes}
             dispatchOnDateChange={dispatchOnDateChange}
             onFormSubmit={handleFormSubmit}
             isFormSubmitted={isFormSubmitted}
-            />
+          />
         </div>
+
         {isPopupVisible && (
           <Popup
             onclose={() => {

@@ -1,90 +1,22 @@
+.r-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 
-.reservation-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #495e57;
-    width: 60vh;
-    height: 60vh;
-    border-radius: 5%;
-    margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    padding: 2rem;
-    box-shadow: 5px 5px 5px black, 10px 10px 10px rgb(104, 102, 102);
 }
 
-.reservation-title,
-.reservation-form {
-    color: white;
+.r-item-title {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
 }
 
-.reservation-title {
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.reservation-form {
-    display:flex;
-    height: 80%;
-    width: 100%;
-    font-size: 25px;
-    flex-direction: column;
-    margin-top: 0;
-    justify-content: space-between;
-}
-
-.reservation-name,
-.reservation-date,
-.reservation-time,
-.reservation-occasion,
-.reservation-number {
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-}
-
-.reservation-name-title,
-.reservation-date-title,
-.reservation-time-title,
-.reservation-occasion-title,
-.reservation-number-title {
-display: flex;
-}
-
-.reservation-name input,
-.reservation-date input,
-.reservation-time input,
-.occasion,
-.numberOfGuests{
-    flex:content;
-    align-content: end;
-    justify-content: end;
-    text-align: right;
-    margin-left: 4rem;
-}
-.submit-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.reservation-form button {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 45%;
-background-color: #f4ce14;
-border: none;
-border-radius: 2em;
-box-shadow: 3px 3px 15px rgba(0,0,0,.2);
-color: #000;
-font-family: Karla,sans-serif;
-font-size: 18px;
-font-weight: 800;
-height: 3em;
-margin: 1em;
+.r-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 input,
@@ -100,57 +32,13 @@ select {
   cursor: pointer;
   transition: border-color 0.3s;
 }
-@media (max-width: 768px) {
-    .reservation-container {
-      width: 100%;
-      height: 100%;
-      padding: 0px;
-      box-shadow: none;
-      margin-top: 0;
-      padding-top: 7REM;
-      border-radius: 0;
-    }
-  
-    .reservation-title {
-      font-size: 35px;
-      color: #f4ce14;
-    }
-  
-    .reservation-form {
-      font-size: 20px;
-    }
-  
-    .reservation-name,
-    .reservation-date,
-    .reservation-time,
-    .reservation-occasion,
-    .reservation-number {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-    }
-  
-    .reservation-name-title,
-    .reservation-date-title,
-    .reservation-time-title,
-    .reservation-occasion-title,
-    .reservation-number-title {
-      margin-bottom: 1rem;
-    }
-  
-    .reservation-name input,
-    .reservation-date input,
-    .reservation-time input,
-    .occasion,
-    .numberOfGuests {
-      margin-left: 0;
-      text-align: center;
-      margin-top: .5rem;
-    }
-  
-    .reservation-form button {
-        margin-top: 3rem;
-      width: 65%;
-    }
-  }
+
+input:focus,
+select:focus {
+  border-width: 0.125rem;
+  border-color: #495e57;
+}
+
+.error {
+  border: 1px solid red !important;
+}

@@ -31,34 +31,9 @@ const ReservationForm = ({
   const minGuest = 1;
   const maxGuest = 8;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Validate the form values
-    if (!formValues.name || !formValues.date || !formValues.time || !formValues.people) {
-      alert("Please fill out all of the required fields.");
-      return;
-    }
-
-    // Submit the form
-    onFormSubmit(e, formValues);
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="r-container">
-        <label htmlFor="date" className="r-item-title">
-          Date
-        </label>
-        <input
-          type="date"
-          id="date"
-          name="date"
-          onChange={handleInputChange}
-          className={isFormSubmitted && !formValues.date ? "error" : ""}
-          required
-        />
-      </div>
+    <form onSubmit={(e) => onFormSubmit(e, formValues)}>
+
       <div className="r-container">
         <label htmlFor="name" className="r-item-title">
           Name
@@ -72,19 +47,39 @@ const ReservationForm = ({
           required
         />
       </div>
+
+      <div className="r-container">
+        <label htmlFor="date" className="r-item-title">
+          Date
+        </label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          onChange={handleInputChange}
+          className={isFormSubmitted && !formValues.date ? "error" : ""}
+          required
+        />
+      </div>
+
       <div className="r-container">
         <label htmlFor="time" className="r-item-title">
           Time
         </label>
-        <input
+        <select
           type="time"
           id="time"
-          name="time"
+          values={formValues.time}
           onChange={handleInputChange}
           className={isFormSubmitted && !formValues.time ? "error" : ""}
           required
-        />
+        >
+          {availableTimes.map((time) => (
+            <option key={time}>{time}</option>
+          ))}
+        </select>
       </div>
+
       <div className="r-container">
         <label htmlFor="people" className="r-item-title">
           Number of Guests
@@ -100,6 +95,7 @@ const ReservationForm = ({
           required
         />
       </div>
+
       <div className="r-container">
         <label htmlFor="occasion" className="r-item-title">
           Special occasion
@@ -110,15 +106,16 @@ const ReservationForm = ({
           onChange={handleInputChange}
           className={isFormSubmitted && !formValues.occasion ? "error" : ""}
         >
+          <option value="none">None</option>
           <option value="birthday">Birthday</option>
           <option value="anniversary">Anniversary</option>
           <option value="graduation">Graduation</option>
           <option value="other">Other</option>
-          <option value="none">None</option>
         </select>
       </div>
-      <div>
-        <Button title="Reserve Your Table" type="submit" />
+      
+      <div className='r-button'>
+        <Button className='r-button' title="Reserve Your Table" type="submit" />
       </div>
     </form>
   );
