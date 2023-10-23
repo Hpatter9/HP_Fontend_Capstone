@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './reservations.css'
+import './reservationform.css';
 
 const ReservationForm = () => {
   const [name, setName] = useState("");
@@ -7,8 +7,8 @@ const ReservationForm = () => {
   const [time, setTime] = useState("");
   const [occasion, setOccasion] = useState("");
   const [numberOfGuests, setNumberOfGuests] = useState("");
-  const occasionOptions = ["Birthday", "Anniversary", "Graduation", "Other", "Not sure"];
-  const numberOfGuestsOptions = ["1", "2", "3", "4", "5"];
+  const occasionOptions = ["None","Birthday", "Anniversary", "Graduation", "Other"];
+  const numberOfGuestsOptions = ["1", "2", "3", "4", "5", "6","7", "8"];
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,11 +26,11 @@ const ReservationForm = () => {
 
   return (
     <div className='reservation-container'>
-      <h1 className='reservation-title'>Book a Table</h1>
+      <h1 className='reservation-title'>Reserve a Table</h1>
       <form onSubmit={handleSubmit} className='reservation-form'>
 
         <div className='reservation-name'>
-          <div className='reservation-name-title'>Name for reservation
+          <div className='reservation-name-title'/>Name for reservation:
           <input
               type="text"
               name="name"
@@ -38,11 +38,10 @@ const ReservationForm = () => {
               value={name}
               onChange={(event) => setName(event.target.value)}
           />
-          </div>
         </div>
 
         <div className='reservation-date'>
-          <div className='reservation-date-title'/>Date of reservation
+          <div className='reservation-date-title'/>Date of reservation:
           <input
             type="date"
             name="date"
@@ -53,7 +52,7 @@ const ReservationForm = () => {
         </div>
 
         <div className='reservation-time'>
-          <div className='reservation-time-title' />Time of reservation
+          <div className='reservation-time-title' />Time of reservation:
           <input
             type="time"
             name="time"
@@ -63,24 +62,9 @@ const ReservationForm = () => {
           />
         </div>
 
-        <div className='reservation-occasion'>
-          <div className='reservation-occasion-title' />Specail occasion
-          <select
-            name="occasion"
-            value={occasion}
-            onChange={(event) => setOccasion(event.target.value)}
-          >
-            {occasionOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </div>
-
         <div className='reservation-number'>
-          <div className='reservation-number-title' /> Number of guests
-          <select
+          <div className='reservation-number-title' /> Number of guests:
+          <select className='numberOfGuests'
             name="numberOfGuests"
             value={numberOfGuests}
             onChange={(event) => setNumberOfGuests(event.target.value)}
@@ -93,7 +77,23 @@ const ReservationForm = () => {
           </select>
         </div>
 
-        <button type="submit">Book Now</button>
+        <div className='reservation-occasion'>
+          <div className='reservation-occasion-title' />Special occasion:
+          <select className='occasion'
+            name="occasion"
+            value={occasion}
+            onChange={(event) => setOccasion(event.target.value)}
+          >
+            {occasionOptions.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className='submit-section'>
+          <button className='reservation-submit' type="submit">Make the Reservation</button>
+        </div>
       </form>
     </div>
   );

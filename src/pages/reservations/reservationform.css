@@ -1,0 +1,102 @@
+.reservation-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #495e57;
+    width: 60vh;
+    height: 60vh;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    box-shadow: 5px 5px 5px black, 10px 10px 10px rgb(104, 102, 102);
+}
+
+.reservation-title,
+.reservation-form {
+    color: white;
+}
+
+.reservation-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.reservation-form {
+    display:flex;
+    height: 80%;
+    width: 100%;
+    font-size: 25px;
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+.reservation-name,
+.reservation-date,
+.reservation-time,
+.reservation-occasion,
+.reservation-number {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.reservation-name-title,
+.reservation-date-title,
+.reservation-time-title,
+.reservation-occasion-title,
+.reservation-number-title {
+display: flex;
+}
+
+.reservation-name input,
+.reservation-date input,
+.reservation-time input,
+.occasion,
+.numberOfGuests{
+    flex:content;
+    align-content: end;
+    justify-content: end;
+    text-align: right;
+    margin-left: 4rem;
+}
+.submit-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.reservation-form button {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+background-color: #f4ce14;
+border: none;
+border-radius: 2em;
+box-shadow: 3px 3px 15px rgba(0,0,0,.2);
+color: #000;
+font-family: Karla,sans-serif;
+font-size: 18px;
+font-weight: 800;
+height: 3em;
+margin: 1em;
+width: 12em;
+}
+
+input,
+select {
+  height: 2.5rem;
+  padding-inline-end: 1rem;
+  padding-inline-start: 1rem;
+  outline: none;
+  border: 0.0625rem solid #e0e0e0;
+  border-radius: 0.375rem;
+  background: #ffffff;
+  color: #495e57;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
