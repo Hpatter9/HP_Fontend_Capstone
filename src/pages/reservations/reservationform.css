@@ -63,6 +63,21 @@ display: flex;
     justify-content: end;
     text-align: right;
     margin-left: 4rem;
+   
+}
+.reservation-date input {
+    margin-left: 10rem;
+}
+.reservation-time input{
+    margin-left: 10rem;
+
+}
+.occasion{
+    margin-left:10rem;
+
+}
+.numberOfGuests{
+    margin-left:15rem;
 }
 .submit-section {
     display: flex;
