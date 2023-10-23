@@ -74,7 +74,7 @@ display: flex;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 100%;
+width: 45%;
 background-color: #f4ce14;
 border: none;
 border-radius: 2em;
@@ -85,7 +85,6 @@ font-size: 18px;
 font-weight: 800;
 height: 3em;
 margin: 1em;
-width: 12em;
 }
 
 input,
@@ -152,6 +151,6 @@ select {
   
     .reservation-form button {
         margin-top: 3rem;
-      width: 100%;
+      width: 65%;
     }
   }

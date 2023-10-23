@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './reservationform.css';
+import Button from '../Button/button.js'
 
 const ReservationForm = () => {
   const [name, setName] = useState("");
@@ -92,7 +93,7 @@ const ReservationForm = () => {
           </select>
         </div>
         <div className='submit-section'>
-          <button className='reservation-submit' type="submit">Make the Reservation</button>
+          <Button title={'Request Reservation'} type="submit"/>
         </div>
       </form>
     </div>

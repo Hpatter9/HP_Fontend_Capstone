@@ -1,0 +1,18 @@
+
+  button.button{
+    background-color: #f4ce14;
+    border: none;
+    border-radius: 2em;
+    box-shadow: 3px 3px 15px rgba(0,0,0,.2);
+    color: #000;
+    font-family: Karla,sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    height: 3em;
+    width: 12em;
+    align-items: center;
+  }
+  .button:active {
+    background-color: #495e57;
+    color: white;
+  }
