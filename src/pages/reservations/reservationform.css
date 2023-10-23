@@ -1,3 +1,4 @@
+
 .reservation-container {
     display: flex;
     flex-direction: column;
@@ -63,21 +64,6 @@ display: flex;
     justify-content: end;
     text-align: right;
     margin-left: 4rem;
-   
-}
-.reservation-date input {
-    margin-left: 10rem;
-}
-.reservation-time input{
-    margin-left: 10rem;
-
-}
-.occasion{
-    margin-left:10rem;
-
-}
-.numberOfGuests{
-    margin-left:15rem;
 }
 .submit-section {
     display: flex;
@@ -115,3 +101,57 @@ select {
   cursor: pointer;
   transition: border-color 0.3s;
 }
+@media (max-width: 768px) {
+    .reservation-container {
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      box-shadow: none;
+      margin-top: 0;
+      padding-top: 7REM;
+      border-radius: 0;
+    }
+  
+    .reservation-title {
+      font-size: 35px;
+      color: #f4ce14;
+    }
+  
+    .reservation-form {
+      font-size: 20px;
+    }
+  
+    .reservation-name,
+    .reservation-date,
+    .reservation-time,
+    .reservation-occasion,
+    .reservation-number {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .reservation-name-title,
+    .reservation-date-title,
+    .reservation-time-title,
+    .reservation-occasion-title,
+    .reservation-number-title {
+      margin-bottom: 1rem;
+    }
+  
+    .reservation-name input,
+    .reservation-date input,
+    .reservation-time input,
+    .occasion,
+    .numberOfGuests {
+      margin-left: 0;
+      text-align: center;
+      margin-top: .5rem;
+    }
+  
+    .reservation-form button {
+        margin-top: 3rem;
+      width: 100%;
+    }
+  }
