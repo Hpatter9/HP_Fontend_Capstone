@@ -58,15 +58,15 @@ const Reservations = () => {
         </div>
 
         {isPopupVisible && (
-          <Popup
-            onclose={() => {
-              setIsPopupVisible(false);
-              navigate(pages.get('home').path);
-            }}
-            title='Reservation Submitted!'
-            description="Thanks for choosing to dine with us at Little Lemon.  You will recieve a confirmation email soon with the details. See you soon!"
-            />
-        )}
+        <Popup
+          onClose={() => {
+            setIsPopupVisible(false);
+            navigate(pages.get("homepage").path);
+          }}
+          title="Reservation Completed!"
+          message="Thank you for choosing Little Lemon! Your reservation has been successfully made. You will receive a confirmation email with the details of your reservation. We are excited to see you soon!"
+        />
+        )};
       </div>
     );
 };

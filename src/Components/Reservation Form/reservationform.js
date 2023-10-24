@@ -106,6 +106,7 @@ const ReservationForm = ({
           onChange={handleInputChange}
           className={isFormSubmitted && !formValues.occasion ? "error" : ""}
         >
+          <option value="select">--Select an option--</option>
           <option value="none">None</option>
           <option value="birthday">Birthday</option>
           <option value="anniversary">Anniversary</option>
