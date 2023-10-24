@@ -19,11 +19,11 @@ const Testimonials = ()=> {
                 </div>
                 <div className='t-layout'>
                     {tData.map((tcard) => (
-                        <div className='t-card' key={tcard.id}>
+                        <div data-testId= 't-card' className='t-card' key={tcard.id}>
                             <img className='t-rating' alt='Star Rating' src={fiveStar}/>
-                            <img className='t-profilepic' alt={tcard.nametag} src={tcard.img}/>
-                            <p className='t-name'>{tcard.nametag}</p>
-                            <p className='t-review'>{tcard.review}</p>
+                            <img className='t-profilepic' alt={tcard.nametag} data-testId='t-profilepic' src={tcard.img}/>
+                            <p data-testId='t-name' className='t-name'>{tcard.nametag}</p>
+                            <p data-testId='t-review' className='t-review'>{tcard.review}</p>
                         </div>
                     ))}
                 </div>

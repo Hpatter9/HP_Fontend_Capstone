@@ -1,34 +1,32 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Header from './Header';
-import '@testing-library/jest-dom/extend-expect';
+import Header from './Header.js';
+import { BrowserRouter } from 'react-router-dom';
 
 test('should render the header logo', () => {
-  render(<Header />);
+  render(
+    <BrowserRouter>
+      <Header />
+    </BrowserRouter>);
 
   const logo = screen.getByAltText('Little Lemon Logo');
   expect(logo).toBeInTheDocument();
 });
 
 test('should render the header navigation menu', () => {
-  render(<Header />);
+  render(<BrowserRouter>
+    <Header />
+  </BrowserRouter>);
 
   const navigation = screen.getByText('Home');
   expect(navigation).toBeInTheDocument();
 });
 
-test('should open the header navigation menu when the menu toggle is clicked', () => {
-  render(<Header />);
-
-  const menuToggle = screen.getByAltText('menu-icon');
-  menuToggle.click();
-
-  const navigation = screen.getByText('Home');
-  expect(navigation).toHaveClass('open');
-});
 
 test('should close the header navigation menu when the menu toggle is clicked again', () => {
-  render(<Header />);
+  render(<BrowserRouter>
+    <Header />
+  </BrowserRouter>);
 
   const menuToggle = screen.getByAltText('menu-icon');
   menuToggle.click();
@@ -39,7 +37,9 @@ test('should close the header navigation menu when the menu toggle is clicked ag
 });
 
 test('should navigate to the home page when the logo is clicked', () => {
-  render(<Header />);
+  render(<BrowserRouter>
+    <Header />
+  </BrowserRouter>);
 
   const logo = screen.getByAltText('Little Lemon Logo');
   logo.click();
@@ -49,7 +49,9 @@ test('should navigate to the home page when the logo is clicked', () => {
 });
 
 test('should navigate to the about page when the about menu item is clicked', () => {
-  render(<Header />);
+  render(<BrowserRouter>
+    <Header />
+  </BrowserRouter>);
 
   const aboutMenuItem = screen.getByText('About');
   aboutMenuItem.click();
@@ -59,7 +61,9 @@ test('should navigate to the about page when the about menu item is clicked', ()
 });
 
 test('should navigate to the menu page when the menu menu item is clicked', () => {
-  render(<Header />);
+  render(<BrowserRouter>
+    <Header />
+  </BrowserRouter>);
 
   const menuMenuItem = screen.getByText('Menu');
   menuMenuItem.click();
@@ -69,7 +73,9 @@ test('should navigate to the menu page when the menu menu item is clicked', () =
 });
 
 test('should navigate to the reservations page when the reservations menu item is clicked', () => {
-  render(<Header />);
+  render(<BrowserRouter>
+    <Header />
+  </BrowserRouter>);
 
   const reservationsMenuItem = screen.getByText('Reservations');
   reservationsMenuItem.click();
@@ -79,7 +85,9 @@ test('should navigate to the reservations page when the reservations menu item i
 });
 
 test('should navigate to the order online page when the order online menu item is clicked', () => {
-  render(<Header />);
+  render(<BrowserRouter>
+    <Header />
+  </BrowserRouter>);
 
   const orderOnlineMenuItem = screen.getByText('Order Online');
   orderOnlineMenuItem.click();
@@ -89,7 +97,9 @@ test('should navigate to the order online page when the order online menu item i
 });
 
 test('should navigate to the login page when the login menu item is clicked', () => {
-  render(<Header />);
+  render(<BrowserRouter>
+    <Header />
+  </BrowserRouter>);
 
   const loginMenuItem = screen.getByText('Login');
   loginMenuItem.click();

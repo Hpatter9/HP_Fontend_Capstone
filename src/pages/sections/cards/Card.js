@@ -13,7 +13,7 @@ const Card = () => {
   ];
 
   return (
-    <cards className='card-container'>
+    <div className='card-container'>
       {cardData.map((card) => (
         <div className='card' key={card.id}>
           <img className='cardimg' src={card.img} alt={card.title}/>
@@ -25,7 +25,7 @@ const Card = () => {
           </div>
         </div>
       ))}
-    </cards>
+    </div>
   );
 };
 

@@ -46,7 +46,7 @@ const Reservations = () => {
   );
 
     return (
-      <div className='r'>
+      <div className='r' data-testId="res">
         <div className='r-card'>
           <h1 className = 'r-title'>Reserve a Table</h1>
           <ReservationForm
