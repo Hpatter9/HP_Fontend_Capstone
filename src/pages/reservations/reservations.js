@@ -66,9 +66,9 @@ const Reservations = () => {
           title="Reservation Completed!"
           message="Thank you for choosing Little Lemon! Your reservation has been successfully made. You will receive a confirmation email with the details of your reservation. We are excited to see you soon!"
         />
-        )};
+        )}
       </div>
-    );
+    )
 };
 
 export default Reservations;

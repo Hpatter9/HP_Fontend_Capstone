@@ -24,9 +24,9 @@ const Footer = ()=> {
                 </ul>
                 <ul className ='social-list'>
                     <li className = 'social-title'>Social Media</li>
-                    <li className = 'social-item'><a href="#facebook">Facebook</a></li>
-                    <li className = 'social-item'><a href="#instagram">Instagram</a></li>
-                    <li className = 'social-item'><a href="#twitter">Twitter</a></li>
+                    <li className = 'social-item'><a href="https://www.facebook.com">Facebook</a></li>
+                    <li className = 'social-item'><a href="https://www.instagram.com">Instagram</a></li>
+                    <li className = 'social-item'><a href="https://www.twitter.com">Twitter</a></li>
                 </ul>
                 <p className='footer-copy'>&copy; 2023 Little Lemon. All rights Reserved.</p>
             </div>

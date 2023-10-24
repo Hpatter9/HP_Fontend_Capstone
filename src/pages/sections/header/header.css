@@ -9,8 +9,8 @@
   margin: 0 auto;
 }
 
-.header-logo {
-  height: 50px;
+.header-logo  img{
+  height: 100px;
 }
 
 li {
