@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4f5140f2.css",
+    "main.js": "/static/js/main.7091c920.js",
+    "static/js/787.3ecd7fac.chunk.js": "/static/js/787.3ecd7fac.chunk.js",
+    "static/media/Mario and Adrian b.jpg": "/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
+    "static/media/bruchetta.svg": "/static/media/bruchetta.ec4950d4eabf4293f4120e3b6c48b7cf.svg",
+    "static/media/greek salad.jpg": "/static/media/greek salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/restaurant.jpg": "/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/white lemon logo.png": "/static/media/white lemon logo.d09eb2af6c5a2225eedf.png",
+    "static/media/selena.jpg": "/static/media/selena.412d62619d46ab20d554.jpg",
+    "static/media/brandon.jpg": "/static/media/brandon.6055557532ec417e5819.jpg",
+    "static/media/peter.jpg": "/static/media/peter.368a476e22b04c93c00f.jpg",
+    "static/media/5 star rating.png": "/static/media/5 star rating.33edb6d38b2d41f4bba0.png",
+    "static/media/Little Lemon logo.png": "/static/media/Little Lemon logo.370f832fad423c516d56.png",
+    "index.html": "/index.html",
+    "static/media/hamburger menu.svg": "/static/media/hamburger menu.2cba90d9a2294d6ec4901bf28d25c693.svg",
+    "main.4f5140f2.css.map": "/static/css/main.4f5140f2.css.map",
+    "main.7091c920.js.map": "/static/js/main.7091c920.js.map",
+    "787.3ecd7fac.chunk.js.map": "/static/js/787.3ecd7fac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f5140f2.css",
+    "static/js/main.7091c920.js"
+  ]
+}
