@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HP_Fontend_Capstone/static/css/main.4f5140f2.css",
-    "main.js": "/HP_Fontend_Capstone/static/js/main.65673557.js",
+    "main.js": "/HP_Fontend_Capstone/static/js/main.39cb3fb6.js",
     "static/js/787.3ecd7fac.chunk.js": "/HP_Fontend_Capstone/static/js/787.3ecd7fac.chunk.js",
     "static/media/Mario and Adrian b.jpg": "/HP_Fontend_Capstone/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
     "static/media/bruchetta.svg": "/HP_Fontend_Capstone/static/media/bruchetta.ec4950d4eabf4293f4120e3b6c48b7cf.svg",
@@ -17,11 +17,11 @@
     "index.html": "/HP_Fontend_Capstone/index.html",
     "static/media/hamburger menu.svg": "/HP_Fontend_Capstone/static/media/hamburger menu.2cba90d9a2294d6ec4901bf28d25c693.svg",
     "main.4f5140f2.css.map": "/HP_Fontend_Capstone/static/css/main.4f5140f2.css.map",
-    "main.65673557.js.map": "/HP_Fontend_Capstone/static/js/main.65673557.js.map",
+    "main.39cb3fb6.js.map": "/HP_Fontend_Capstone/static/js/main.39cb3fb6.js.map",
     "787.3ecd7fac.chunk.js.map": "/HP_Fontend_Capstone/static/js/787.3ecd7fac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f5140f2.css",
-    "static/js/main.65673557.js"
+    "static/js/main.39cb3fb6.js"
   ]
 }
